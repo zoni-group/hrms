@@ -26,7 +26,7 @@ class JobRequisition(Document):
 		)
 
 		if duplicate:
-			frappe.throw(
+			frappe.msgprint(
 				_("A Job Requisition for {0} requested by {1} already exists: {2}").format(
 					frappe.bold(self.designation),
 					frappe.bold(self.requested_by),

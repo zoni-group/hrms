@@ -133,7 +133,7 @@
 			:disabled="isReadOnly"
 		/>
 
-		<ErrorMessage :message="__(props.errorMessage)" />
+		<ErrorMessage :message="props.errorMessage" />
 	</div>
 </template>
 

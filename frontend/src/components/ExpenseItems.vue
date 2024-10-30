@@ -45,7 +45,7 @@
 import { computed, inject } from "vue"
 
 import { getCompanyCurrency } from "@/data/currencies"
-import { formatCurrency } from "@/utils/formatters";
+import { formatCurrency } from "@/utils/formatters"
 
 const props = defineProps({
 	doc: {

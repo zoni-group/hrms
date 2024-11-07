@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-03 09:34+0000\n"
-"PO-Revision-Date: 2024-11-03 17:48\n"
+"PO-Revision-Date: 2024-11-06 18:00\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -1165,7 +1165,7 @@ msgstr "Período de aplicación no puede ser período de asignación licencia fu
 
 #: hrms/templates/generators/job_opening.html:162
 msgid "Applications Received"
-msgstr ""
+msgstr "Solicitudes recibidas"
 
 #: hrms/www/jobs/index.html:235
 msgid "Applications received:"
@@ -1179,7 +1179,7 @@ msgstr "Se aplica a la empresa"
 
 #: hrms/www/jobs/index.html:352
 msgid "Apply"
-msgstr ""
+msgstr "Postularse"
 
 #. Description of a DocType
 #: hrms/hr/doctype/leave_application/leave_application.json
@@ -1898,7 +1898,7 @@ msgstr ""
 #. Option for the 'Roster Color' (Select) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
 msgid "Blue"
-msgstr ""
+msgstr "Azul"
 
 #. Label of the body_section (Section Break) field in DocType 'Appointment
 #. Letter'
@@ -6163,7 +6163,7 @@ msgstr ""
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 #: hrms/setup.py:200
 msgid "Grade"
-msgstr ""
+msgstr "Calificación"
 
 #. Label of the grand_total (Currency) field in DocType 'Expense Claim'
 #: hrms/hr/doctype/expense_claim/expense_claim.json
@@ -10409,7 +10409,7 @@ msgstr ""
 #. Option for the 'Roster Color' (Select) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json
 msgid "Red"
-msgstr ""
+msgstr "Rojo"
 
 #. Label of the reference (Link) field in DocType 'Full and Final Asset'
 #: hrms/hr/doctype/expense_claim/expense_claim_dashboard.py:10
@@ -12009,7 +12009,7 @@ msgstr "nombre de la habilidad"
 #. Map'
 #: hrms/hr/doctype/employee_skill_map/employee_skill_map.json hrms/setup.py:176
 msgid "Skills"
-msgstr ""
+msgstr "Habilidades"
 
 #. Label of the skip_auto_attendance (Check) field in DocType 'Employee
 #. Checkin'
@@ -14412,7 +14412,7 @@ msgstr "{} Aceptado"
 #. Count format of shortcut in the HR Workspace
 #: hrms/hr/workspace/hr/hr.json
 msgid "{} Active"
-msgstr ""
+msgstr "{} Activo"
 
 #. Count format of shortcut in the Salary Payout Workspace
 #. Count format of shortcut in the Tax & Benefits Workspace

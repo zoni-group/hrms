@@ -95,6 +95,7 @@ const employees = createListResource({
 	doctype: "Employee",
 	fields: ["name", "employee_name", "designation", "image"],
 	filters: employeeFilters,
+	pageLength: 99999,
 	auto: true,
 	onError(error: { messages: string[] }) {
 		raiseToast("error", error.messages[0]);

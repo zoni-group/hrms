@@ -28,12 +28,14 @@
 				@addToMonth="addToMonth"
 			/>
 			<MonthViewTable
+				v-if="isCompanySelected"
 				ref="monthViewTable"
 				:firstOfMonth="firstOfMonth"
 				:employees="employees.data || []"
 				:employeeFilters="employeeFilters"
 				:shiftTypeFilter="shiftTypeFilter"
 			/>
+			<div v-else class="my-40 text-center">Please select a company.</div>
 		</div>
 	</div>
 	<ShiftAssignmentDialog
@@ -61,6 +63,7 @@ export type EmployeeFilters = {
 };
 
 const monthViewTable = ref<InstanceType<typeof MonthViewTable>>();
+const isCompanySelected = ref(false);
 const showShiftAssignmentDialog = ref(false);
 const firstOfMonth = ref(dayjs().date(1).startOf("D"));
 const shiftTypeFilter = ref("");
@@ -73,6 +76,8 @@ const addToMonth = (change: number) => {
 };
 
 const updateFilters = (newFilters: EmployeeFilters & { shift_type: string }) => {
+	isCompanySelected.value = !!newFilters.company;
+	if (!isCompanySelected.value) return;
 	let employeeUpdated = false;
 	(Object.entries(newFilters) as [keyof EmployeeFilters | "shift_type", string][]).forEach(
 		([key, value]) => {
@@ -96,7 +101,6 @@ const employees = createListResource({
 	fields: ["name", "employee_name", "designation", "image"],
 	filters: employeeFilters,
 	pageLength: 99999,
-	auto: true,
 	onError(error: { messages: string[] }) {
 		raiseToast("error", error.messages[0]);
 	},

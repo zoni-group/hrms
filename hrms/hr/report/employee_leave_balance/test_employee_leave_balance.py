@@ -241,6 +241,7 @@ class TestEmployeeLeaveBalance(IntegrationTestCase):
 		)
 		report = execute(filters)
 		self.assertEqual(len(report[1]), 1)
+
 	@set_holiday_list("_Test Emp Balance Holiday List", "_Test Company")
 	def test_closing_balance_considers_carry_forwarded_leaves(self):
 		leave_type = create_leave_type(leave_type_name="_Test_CF_leave_expiry", is_carry_forward=1)
@@ -284,5 +285,3 @@ class TestEmployeeLeaveBalance(IntegrationTestCase):
 			+ allocation2.new_leaves_allocated
 		)
 		self.assertEqual(report[1][0].closing_balance, closing_balance)
-
-

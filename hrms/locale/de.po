@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-03 09:34+0000\n"
-"PO-Revision-Date: 2024-11-03 17:48\n"
+"PO-Revision-Date: 2024-11-10 18:39\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -4223,7 +4223,7 @@ msgstr "Mitarbeiter einchecken"
 
 #: frontend/src/views/attendance/EmployeeCheckinList.vue:5
 msgid "Employee Checkin History"
-msgstr "Mitarbeiter Checkin Historie"
+msgstr ""
 
 #. Name of a DocType
 #: hrms/payroll/doctype/employee_cost_center/employee_cost_center.json
@@ -4290,7 +4290,7 @@ msgstr "Kriterien für Mitarbeiter-Feedback"
 #. Name of a DocType
 #: hrms/hr/doctype/employee_feedback_rating/employee_feedback_rating.json
 msgid "Employee Feedback Rating"
-msgstr "Mitarbeiter Feedback Rating"
+msgstr ""
 
 #. Name of a DocType
 #. Label of the employee_grade (Link) field in DocType 'Employee Onboarding'
@@ -6079,11 +6079,11 @@ msgstr "Vorlage aufrufen"
 
 #: frontend/src/components/InstallPrompt.vue:8
 msgid "Get the app on your device for easy access & a better experience!"
-msgstr "Hol dir die App auf dein Device für einfachen Zugriff & ein besseres Erlebnis"
+msgstr ""
 
 #: frontend/src/components/InstallPrompt.vue:41
 msgid "Get the app on your iPhone for easy access & a better experience"
-msgstr "Hol dir die App auf dein iPhone für einfachen Zugriff & ein besseres Erlebnis"
+msgstr ""
 
 #. Option for the 'Meal Preference' (Select) field in DocType 'Travel
 #. Itinerary'
@@ -6093,11 +6093,11 @@ msgstr "Gluten-frei"
 
 #: frontend/src/views/InvalidEmployee.vue:12
 msgid "Go to Login"
-msgstr "Zu Login gehen"
+msgstr ""
 
 #: frontend/src/views/Login.vue:70
 msgid "Go to Reset Password page"
-msgstr "Zur Passwort zurücksetzen Seite gehen"
+msgstr ""
 
 #. Label of the kra (Small Text) field in DocType 'Appraisal Goal'
 #. Name of a DocType
@@ -6552,7 +6552,7 @@ msgstr "Hallo {}! Diese E-Mail soll Sie an die bevorstehenden Feiertage erinnern
 
 #: frontend/src/components/CheckInPanel.vue:4
 msgid "Hey, {0} 👋"
-msgstr "Hallo, {0} 👋"
+msgstr ""
 
 #: hrms/hr/dashboard_chart_source/hiring_vs_attrition_count/hiring_vs_attrition_count.py:44
 msgid "Hiring Count"
@@ -11076,7 +11076,7 @@ msgstr "Gehaltserwartung"
 
 #: frontend/src/views/Profile.vue:200
 msgid "Salary Information"
-msgstr "Gehaltsinformationen"
+msgstr ""
 
 #. Label of the salary_per (Select) field in DocType 'Job Opening'
 #: hrms/hr/doctype/job_opening/job_opening.json

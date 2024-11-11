@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-03 09:34+0000\n"
-"PO-Revision-Date: 2024-11-03 17:48\n"
+"PO-Revision-Date: 2024-11-10 18:39\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
@@ -1018,7 +1018,7 @@ msgstr "اصلاح شده از"
 #: hrms/payroll/doctype/salary_detail/salary_detail.json
 #: hrms/payroll/report/professional_tax_deductions/professional_tax_deductions.py:32
 msgid "Amount"
-msgstr "میزان"
+msgstr "مبلغ"
 
 #: hrms/payroll/doctype/salary_structure/salary_structure.py:49
 msgid "Amount Based on Formula"
@@ -8331,7 +8331,7 @@ msgstr "حداکثر مزایا (سالانه)"
 #: hrms/payroll/doctype/employee_tax_exemption_category/employee_tax_exemption_category.json
 #: hrms/payroll/doctype/employee_tax_exemption_sub_category/employee_tax_exemption_sub_category.json
 msgid "Max Exemption Amount"
-msgstr "حداکثر میزان معافیت"
+msgstr "حداکثر مبلغ معافیت"
 
 #: hrms/payroll/doctype/employee_tax_exemption_sub_category/employee_tax_exemption_sub_category.py:18
 msgid "Max Exemption Amount cannot be greater than maximum exemption amount {0} of Tax Exemption Category {1}"
@@ -8377,13 +8377,13 @@ msgstr "حداکثر مرخصی های قابل بازخرید"
 #. Declaration Category'
 #: hrms/payroll/doctype/employee_tax_exemption_declaration_category/employee_tax_exemption_declaration_category.json
 msgid "Maximum Exempted Amount"
-msgstr "حداکثر میزان معافیت"
+msgstr "حداکثر مبلغ معافیت"
 
 #. Label of the max_amount (Currency) field in DocType 'Employee Tax Exemption
 #. Proof Submission Detail'
 #: hrms/payroll/doctype/employee_tax_exemption_proof_submission_detail/employee_tax_exemption_proof_submission_detail.json
 msgid "Maximum Exemption Amount"
-msgstr "حداکثر میزان معافیت"
+msgstr "حداکثر مبلغ معافیت"
 
 #. Label of the max_leaves_allowed (Float) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json

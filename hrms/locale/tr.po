@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-10 09:33+0000\n"
-"PO-Revision-Date: 2024-11-11 18:35\n"
+"PO-Revision-Date: 2024-11-12 19:06\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -2188,11 +2188,11 @@ msgstr "Daha fazla ayrıntı için Hata Günlüğü {0} adresini kontrol edin."
 
 #: frontend/src/components/CheckInPanel.vue:124
 msgid "Check In"
-msgstr ""
+msgstr "Giriş"
 
 #: frontend/src/components/CheckInPanel.vue:123
 msgid "Check Out"
-msgstr ""
+msgstr "Çıkış"
 
 #. Label of the check_vacancies (Check) field in DocType 'HR Settings'
 #: hrms/hr/doctype/hr_settings/hr_settings.json
@@ -2206,7 +2206,7 @@ msgstr "Daha fazla ayrıntı için {0} adresini kontrol edin"
 
 #: frontend/src/components/CheckInPanel.vue:160
 msgid "Check-in"
-msgstr ""
+msgstr "Giriş"
 
 #. Label of the check_in_date (Date) field in DocType 'Travel Itinerary'
 #: hrms/hr/doctype/travel_itinerary/travel_itinerary.json
@@ -2215,7 +2215,7 @@ msgstr "Giriş Tarihi"
 
 #: frontend/src/components/CheckInPanel.vue:160
 msgid "Check-out"
-msgstr ""
+msgstr "Çıkış"
 
 #. Label of the check_out_date (Date) field in DocType 'Travel Itinerary'
 #: hrms/hr/doctype/travel_itinerary/travel_itinerary.json
@@ -2615,7 +2615,7 @@ msgstr "Onayla"
 
 #: frontend/src/components/CheckInPanel.vue:73
 msgid "Confirm {0}"
-msgstr ""
+msgstr "Onayla {0}"
 
 #. Label of the connections_tab (Tab Break) field in DocType 'Job Requisition'
 #. Label of the connections_tab (Tab Break) field in DocType 'Payroll Entry'
@@ -3709,7 +3709,7 @@ msgstr "Kapalı"
 
 #: frontend/src/views/AppSettings.vue:40
 msgid "Disabling Push Notifications..."
-msgstr ""
+msgstr "Anlık Bildirimleri Devre Dışı Bırakılıyor..."
 
 #: frontend/src/components/WorkflowActionSheet.vue:111
 msgid "Dismiss"
@@ -4904,7 +4904,7 @@ msgstr ""
 
 #: frontend/src/views/AppSettings.vue:25
 msgid "Enable Push Notifications"
-msgstr ""
+msgstr "Anlık Bildirimleri Etkinleştir"
 
 #. Label of the enabled (Check) field in DocType 'Daily Work Summary Group'
 #. Label of the enabled (Check) field in DocType 'Shift Assignment Schedule'
@@ -4916,7 +4916,7 @@ msgstr "Etkin"
 
 #: frontend/src/views/AppSettings.vue:40
 msgid "Enabling Push Notifications..."
-msgstr ""
+msgstr "Anlık Bildirimler Etkinleştiriliyor..."
 
 #. Label of the encashment (Section Break) field in DocType 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
@@ -6571,7 +6571,7 @@ msgstr "Merhaba {}! Bu e-posta size yaklaşan tatilleri hatırlatmak içindir g�
 
 #: frontend/src/components/CheckInPanel.vue:4
 msgid "Hey, {0} 👋"
-msgstr ""
+msgstr "Merhaba, {0}"
 
 #: hrms/hr/dashboard_chart_source/hiring_vs_attrition_count/hiring_vs_attrition_count.py:44
 msgid "Hiring Count"
@@ -6757,7 +6757,7 @@ msgstr ""
 #. Component'
 #: hrms/payroll/doctype/salary_component/salary_component.json
 msgid "If enabled, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted. "
-msgstr ""
+msgstr "Etkinleştirilirse, bu bileşende belirtilen veya hesaplanan değer kazançlara veya kesintilere katkıda bulunmayacaktır. Ancak, değeri eklenebilen veya düşülebilen diğer bileşenler tarafından referans alınabilir. "
 
 #. Description of the 'Include holidays in Total no. of Working Days' (Check)
 #. field in DocType 'Payroll Settings'
@@ -6969,7 +6969,7 @@ msgstr "Gelir Vergisi Levhası: {0} devre dışı bırakıldı"
 #. Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Income from Other Sources"
-msgstr ""
+msgstr "Diğer Kaynaklardan Elde Edilen Gelir"
 
 #: hrms/hr/doctype/appraisal/appraisal.py:159 hrms/mixins/appraisal.py:20
 msgid "Incorrect Weightage Allocation"
@@ -8159,7 +8159,7 @@ msgstr "Konaklama Gerekli"
 
 #: frontend/src/views/Profile.vue:107
 msgid "Log Out"
-msgstr ""
+msgstr "Çıkış Yap"
 
 #. Label of the log_type (Select) field in DocType 'Employee Checkin'
 #: frontend/src/views/attendance/EmployeeCheckinList.vue:22
@@ -8177,7 +8177,7 @@ msgstr "Giriş"
 
 #: frontend/src/views/InvalidEmployee.vue:7
 msgid "Login Failed"
-msgstr ""
+msgstr "Giriş Başarısız"
 
 #: frontend/src/views/Login.vue:8
 msgid "Login to Frappe HR"
@@ -8627,7 +8627,7 @@ msgstr "Hesabım"
 
 #: frontend/src/views/employee_advance/List.vue:17
 msgid "My Advances"
-msgstr ""
+msgstr "Avanslarım"
 
 #: frontend/src/views/expense_claim/List.vue:18
 msgid "My Claims"
@@ -8720,11 +8720,11 @@ msgstr "Yeni Personel ID"
 
 #: frontend/src/components/ExpensesTable.vue:213
 msgid "New Expense Item"
-msgstr ""
+msgstr "Yeni Gider Kalemi"
 
 #: frontend/src/components/ExpenseTaxesTable.vue:221
 msgid "New Expense Tax"
-msgstr ""
+msgstr "Yeni Gider Vergisi"
 
 #: hrms/public/js/templates/performance_feedback.html:26
 msgid "New Feedback"
@@ -8870,7 +8870,7 @@ msgstr "Seçilen filtrelere ve aktif maaş yapısına sahip Personel bulunamadı
 
 #: hrms/public/js/templates/feedback_history.html:55
 msgid "No feedback has been received yet"
-msgstr ""
+msgstr "Henüz geri bildirim alınmadı"
 
 #: hrms/hr/doctype/goal/goal_list.js:94
 msgid "No items selected"
@@ -8918,11 +8918,11 @@ msgstr "Günlük Olmayan"
 #. Label of the non_taxable_earnings (Currency) field in DocType 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Non Taxable Earnings"
-msgstr ""
+msgstr "Vergiye Tabi Olmayan Kazançlar"
 
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:250
 msgid "Non-Billed Hours"
-msgstr ""
+msgstr "Faturalandırılmayan Saatler"
 
 #: hrms/hr/report/employee_hours_utilization_based_on_timesheet/employee_hours_utilization_based_on_timesheet.py:74
 msgid "Non-Billed Hours (NB)"
@@ -10876,7 +10876,7 @@ msgstr "İade Edilen Tutar"
 
 #: hrms/hr/doctype/hr_settings/hr_settings.js:41
 msgid "Review various other settings related to Employee Leaves and Expense Claim"
-msgstr ""
+msgstr "Personel İzinleri ve Gider Talebi ile ilgili diğer çeşitli ayarları inceleyin"
 
 #. Label of the reviewer (Link) field in DocType 'Employee Performance
 #. Feedback'
@@ -12625,7 +12625,7 @@ msgstr "Teşekkürler"
 
 #: hrms/overrides/company.py:131
 msgid "The currency of {0} should be same as the company's default currency. Please select another account."
-msgstr ""
+msgstr "{0} para birimi şirketin varsayılan para birimiyle aynı olmalıdır. Lütfen başka bir hesap seçin."
 
 #. Description of the 'Payroll Date' (Date) field in DocType 'Additional
 #. Salary'

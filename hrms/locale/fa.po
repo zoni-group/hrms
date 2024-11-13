@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-10 09:33+0000\n"
-"PO-Revision-Date: 2024-11-11 18:35\n"
+"PO-Revision-Date: 2024-11-12 19:06\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
@@ -571,7 +571,7 @@ msgstr "نوع فعالیت"
 #. Proof Submission Detail'
 #: hrms/payroll/doctype/employee_tax_exemption_proof_submission_detail/employee_tax_exemption_proof_submission_detail.json
 msgid "Actual Amount"
-msgstr "مقدار واقعی"
+msgstr "مبلغ واقعی"
 
 #. Label of the actual_cost (Currency) field in DocType 'Full and Final Asset'
 #: hrms/hr/doctype/full_and_final_asset/full_and_final_asset.json
@@ -1064,7 +1064,7 @@ msgstr ""
 
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.py:58
 msgid "An amount of {0} already claimed for the component {1}, set the amount equal or greater than {2}"
-msgstr "مقدار {0} قبلاً برای مؤلفه {1} ادعا شده است، مقدار آن را برابر یا بیشتر از {2} قرار دهید"
+msgstr "مبلغ {0} قبلاً برای مؤلفه {1} ادعا شده است، مبلغ آن را برابر یا بیشتر از {2} قرار دهید"
 
 #. Label of the annual_allocation (Float) field in DocType 'Leave Policy
 #. Detail'
@@ -3251,7 +3251,7 @@ msgstr "حساب پیش فرض"
 #. Label of the default_amount (Currency) field in DocType 'Salary Detail'
 #: hrms/payroll/doctype/salary_detail/salary_detail.json
 msgid "Default Amount"
-msgstr "مقدار پیش فرض"
+msgstr "مبلغ پیش فرض"
 
 #. Description of the 'Account' (Link) field in DocType 'Salary Component
 #. Account'
@@ -3694,7 +3694,7 @@ msgstr "رد"
 #. Benefit Application'
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
 msgid "Dispensed Amount (Pro-rated)"
-msgstr "مقدار توزیع شده (مطابق با رتبه)"
+msgstr "مبلغ توزیع شده (مطابق با رتبه)"
 
 #. Label of the do_not_include_in_total (Check) field in DocType 'Salary
 #. Component'
@@ -4764,7 +4764,7 @@ msgstr "کارمند {0} قبلاً برای {1} بین {2} و {3} درخواس�
 
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.py:25
 msgid "Employee {0} has no maximum benefit amount"
-msgstr "کارمند {0} حداکثر مقدار مزایا ندارد"
+msgstr "کارمند {0} حداکثر مبلغ مزایا ندارد"
 
 #: hrms/hr/doctype/attendance/attendance.py:199
 msgid "Employee {0} is not active or does not exist"
@@ -5848,7 +5848,7 @@ msgstr "از جانب"
 #. Label of the from_amount (Currency) field in DocType 'Taxable Salary Slab'
 #: hrms/payroll/doctype/taxable_salary_slab/taxable_salary_slab.json
 msgid "From Amount"
-msgstr "از مقدار"
+msgstr "از مبلغ"
 
 #. Label of the from_date (Date) field in DocType 'Attendance Request'
 #. Label of the from_date (Date) field in DocType 'Leave Allocation'
@@ -8299,7 +8299,7 @@ msgstr "کارشناسی ارشد"
 #. Benefit Claim'
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.json
 msgid "Max Amount Eligible"
-msgstr "حداکثر مقدار واجد شرایط"
+msgstr "حداکثر مبلغ واجد شرایط"
 
 #. Label of the max_benefit_amount (Currency) field in DocType 'Employee
 #. Benefit Application Detail'
@@ -8316,7 +8316,7 @@ msgstr "حداکثر مبلغ مزایا (سالانه)"
 #. Label of the max_benefits (Currency) field in DocType 'Salary Structure'
 #: hrms/payroll/doctype/salary_structure/salary_structure.json
 msgid "Max Benefits (Amount)"
-msgstr "حداکثر مزایا (مقدار)"
+msgstr "حداکثر مزایا (مبلغ)"
 
 #. Label of the max_benefits (Currency) field in DocType 'Employee Benefit
 #. Application'
@@ -8392,16 +8392,16 @@ msgstr "حداکثر تخصیص مرخصی مجاز است"
 
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.py:65
 msgid "Maximum amount eligible for the component {0} exceeds {1}"
-msgstr "حداکثر مقدار واجد شرایط برای مؤلفه {0} از {1} بیشتر است"
+msgstr "حداکثر مبلغ واجد شرایط برای مؤلفه {0} از {1} بیشتر است"
 
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.py:140
 msgid "Maximum benefit amount of component {0} exceeds {1}"
-msgstr "حداکثر مقدار مزایای مؤلفه {0} از {1} بیشتر است"
+msgstr "حداکثر مبلغ مزایای مؤلفه {0} از {1} بیشتر است"
 
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.py:120
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.py:54
 msgid "Maximum benefit amount of employee {0} exceeds {1}"
-msgstr "حداکثر میزان مزایای کارمند {0} از {1} بیشتر است"
+msgstr "حداکثر مبلغ مزایای کارمند {0} از {1} بیشتر است"
 
 #: hrms/payroll/doctype/employee_benefit_claim/employee_benefit_claim.py:87
 msgid "Maximum benefit of employee {0} exceeds {1} by the sum {2} of benefit application pro-rata component amount and previous claimed amount"
@@ -8669,7 +8669,7 @@ msgstr "پرداخت خالص نمی تواند کمتر از 0 باشد"
 
 #: hrms/payroll/report/bank_remittance/bank_remittance.py:53
 msgid "Net Salary Amount"
-msgstr "مقدار خالص حقوق"
+msgstr "مبلغ خالص حقوق"
 
 #: hrms/payroll/doctype/salary_structure/salary_structure.py:93
 msgid "Net pay cannot be negative"
@@ -9298,7 +9298,7 @@ msgstr "بررسی اجمالی"
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:135
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:163
 msgid "Overwrite Salary Structure Amount"
-msgstr "بازنویسی مقدار ساختار حقوق و دستمزد"
+msgstr "بازنویسی مبلغ ساختار حقوق و دستمزد"
 
 #. Option for the 'Status' (Select) field in DocType 'Full and Final Asset'
 #: hrms/hr/doctype/full_and_final_asset/full_and_final_asset.json
@@ -9315,7 +9315,7 @@ msgstr "حساب PF"
 
 #: hrms/payroll/report/provident_fund_deductions/provident_fund_deductions.py:32
 msgid "PF Amount"
-msgstr "مقدار PF"
+msgstr "مبلغ PF"
 
 #: hrms/payroll/report/provident_fund_deductions/provident_fund_deductions.py:39
 msgid "PF Loan"
@@ -9347,7 +9347,7 @@ msgstr "پرداخت شده"
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:22
 #: hrms/payroll/doctype/gratuity/gratuity.json
 msgid "Paid Amount"
-msgstr "مقدار پرداخت شده"
+msgstr "مبلغ پرداخت شده"
 
 #. Label of the paid_via_salary_slip (Check) field in DocType 'Full and Final
 #. Outstanding Statement'
@@ -10046,7 +10046,7 @@ msgstr "پیش نمایش فیش حقوقی"
 #. Label of the principal_amount (Currency) field in DocType 'Salary Slip Loan'
 #: hrms/payroll/doctype/salary_slip_loan/salary_slip_loan.json
 msgid "Principal Amount"
-msgstr "مقدار اصلی"
+msgstr "مبلغ اصلی"
 
 #. Label of the select_print_heading (Link) field in DocType 'Job Offer'
 #: hrms/hr/doctype/job_offer/job_offer.json
@@ -10216,7 +10216,7 @@ msgstr "هدف"
 #. Advance'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 msgid "Purpose & Amount"
-msgstr "هدف و مقدار"
+msgstr "هدف و مبلغ"
 
 #. Name of a DocType
 #. Label of the purpose_of_travel (Data) field in DocType 'Purpose of Travel'
@@ -10963,7 +10963,7 @@ msgstr "ردیف {0}# مبلغ تخصیص یافته {1} نمی تواند بی�
 
 #: hrms/payroll/doctype/gratuity/gratuity.py:138
 msgid "Row {0}# Paid Amount cannot be greater than Total amount"
-msgstr "ردیف {0}# مبلغ پرداختی نمی‌تواند بیشتر از مقدار کل باشد"
+msgstr "ردیف {0}# مبلغ پرداختی نمی‌تواند بیشتر از مبلغ کل باشد"
 
 #: hrms/hr/doctype/employee_advance/employee_advance.py:130
 msgid "Row {0}# Paid Amount cannot be greater than requested advance amount"
@@ -11324,11 +11324,11 @@ msgstr "تحریم شد"
 #: hrms/hr/doctype/expense_claim_detail/expense_claim_detail.json
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.py:21
 msgid "Sanctioned Amount"
-msgstr "مقدار تحریم شده"
+msgstr "مبلغ تحریم شده"
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:360
 msgid "Sanctioned Amount cannot be greater than Claim Amount in Row {0}."
-msgstr "مقدار تحریم شده نمی تواند بیشتر از مقدار ادعا در ردیف {0} باشد."
+msgstr "مبلغ تحریم شده نمی تواند بیشتر از مبلغ ادعا در ردیف {0} باشد."
 
 #: frontend/src/components/AttendanceCalendar.vue:118
 #: hrms/hr/doctype/leave_block_list/leave_block_list.js:62
@@ -12082,7 +12082,7 @@ msgstr "طرح کارگزینی {0} از قبل برای نقش سازمانی {
 #: hrms/payroll/doctype/income_tax_slab/income_tax_slab.json
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Standard Tax Exemption Amount"
-msgstr "مقدار استاندارد معافیت مالیاتی"
+msgstr "مبلغ استاندارد معافیت مالیاتی"
 
 #. Label of the standard_working_hours (Float) field in DocType 'HR Settings'
 #: hrms/hr/doctype/hr_settings/hr_settings.json
@@ -12825,7 +12825,7 @@ msgstr "به"
 #. Label of the to_amount (Currency) field in DocType 'Taxable Salary Slab'
 #: hrms/payroll/doctype/taxable_salary_slab/taxable_salary_slab.json
 msgid "To Amount"
-msgstr "به مقدار"
+msgstr "به مبلغ"
 
 #. Label of the to_date (Date) field in DocType 'Attendance Request'
 #. Label of the to_date (Date) field in DocType 'Leave Allocation'
@@ -12988,7 +12988,7 @@ msgstr ""
 #: hrms/payroll/doctype/employee_benefit_application/employee_benefit_application.json
 #: hrms/payroll/doctype/gratuity/gratuity.json
 msgid "Total Amount"
-msgstr "مقدار کل"
+msgstr "مبلغ کل"
 
 #. Label of the total_amount_reimbursed (Currency) field in DocType 'Expense
 #. Claim'
@@ -12998,7 +12998,7 @@ msgstr "کل مبلغ بازپرداخت شده"
 
 #: hrms/payroll/doctype/gratuity/gratuity.py:105
 msgid "Total Amount cannot be zero"
-msgstr ""
+msgstr "مبلغ کل نمی تواند صفر باشد"
 
 #. Label of the total_asset_recovery_cost (Currency) field in DocType 'Full and
 #. Final Statement'
@@ -13229,12 +13229,12 @@ msgstr "مجموع مبلغ مؤلفه مزایای انعطاف‌پذیر {0} 
 #. Label of the total_in_words (Data) field in DocType 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Total in words"
-msgstr "مجموع در کلمات"
+msgstr "مجموع به حروف"
 
 #. Label of the base_total_in_words (Data) field in DocType 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Total in words (Company Currency)"
-msgstr "مجموع در کلمات (ارز شرکت)"
+msgstr "مجموع به حروف (ارز شرکت)"
 
 #: hrms/hr/doctype/leave_allocation/leave_allocation.py:351
 msgid "Total leaves allocated cannot exceed annual allocation of {0}."

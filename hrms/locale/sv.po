@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-10 09:33+0000\n"
-"PO-Revision-Date: 2024-11-21 21:08\n"
+"PO-Revision-Date: 2024-11-22 21:43\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -397,7 +397,7 @@ msgstr "Läsår Användare"
 #: hrms/overrides/employee_master.py:64 hrms/overrides/employee_master.py:80
 #: hrms/payroll/doctype/additional_salary/additional_salary.py:113
 msgid "Accepted"
-msgstr "Godkänd"
+msgstr "Accepterad"
 
 #. Label of the account (Link) field in DocType 'Full and Final Asset'
 #. Label of the account (Link) field in DocType 'Full and Final Outstanding
@@ -1063,7 +1063,7 @@ msgstr "Belopp Baserad på Formel"
 #. Advance'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
 msgid "Amount claimed via Expense Claim"
-msgstr "Belopp som begärts via Kostnad Anspråk"
+msgstr "Belopp som begärts via Utlägg"
 
 #. Description of the 'Advance Amount' (Currency) field in DocType 'Employee
 #. Advance'
@@ -2002,7 +2002,7 @@ msgstr "Mass Ledighet Regel Tilldelning"
 #: hrms/payroll/doctype/salary_structure/salary_structure_list.js:3
 #: hrms/payroll/workspace/salary_payout/salary_payout.json
 msgid "Bulk Salary Structure Assignment"
-msgstr "Mass Löneart Tilldelning"
+msgstr "Löneart Masstilldelning"
 
 #. Description of the 'Calculate Final Score based on Formula' (Check) field in
 #. DocType 'Appraisal Cycle'
@@ -2245,7 +2245,7 @@ msgstr "Anspråk Datum"
 #: frontend/src/views/Home.vue:47
 #: frontend/src/views/expense_claim/Dashboard.vue:17
 msgid "Claim an Expense"
-msgstr "Anspråk på Kostnad"
+msgstr "Begär Utlägg"
 
 #. Option for the 'Status' (Select) field in DocType 'Employee Advance'
 #: hrms/hr/doctype/employee_advance/employee_advance.json
@@ -3295,7 +3295,7 @@ msgstr "Standard Förskott Konto"
 
 #: hrms/setup.py:73
 msgid "Default Expense Claim Payable Account"
-msgstr "Standard Kostnad Anspråk Konto"
+msgstr "Standard Utlägg Konto"
 
 #: hrms/overrides/company.py:133 hrms/setup.py:96
 msgid "Default Payroll Payable Account"
@@ -5368,7 +5368,7 @@ msgstr "Kostnad Godkännare"
 #. DocType 'HR Settings'
 #: hrms/hr/doctype/hr_settings/hr_settings.json
 msgid "Expense Approver Mandatory In Expense Claim"
-msgstr "Kostnad Godkännare erfodras för Kostnad Anspråk"
+msgstr "Kostnad Godkännare erfodras för Utlägg"
 
 #. Name of a DocType
 #. Label of a Link in the Expense Claims Workspace
@@ -5382,12 +5382,12 @@ msgstr "Kostnad Godkännare erfodras för Kostnad Anspråk"
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 #: hrms/hr/workspace/hr/hr.json hrms/public/js/erpnext/delivery_trip.js:8
 msgid "Expense Claim"
-msgstr "Kostnad Anspråk"
+msgstr "Utlägg"
 
 #. Name of a DocType
 #: hrms/hr/doctype/expense_claim_account/expense_claim_account.json
 msgid "Expense Claim Account"
-msgstr "Kostnad Anspråk Konto"
+msgstr "Utlägg Konto"
 
 #. Name of a DocType
 #: hrms/hr/doctype/expense_claim_advance/expense_claim_advance.json
@@ -5397,11 +5397,11 @@ msgstr "Utlägg Förskott"
 #. Name of a DocType
 #: hrms/hr/doctype/expense_claim_detail/expense_claim_detail.json
 msgid "Expense Claim Detail"
-msgstr "Kostnad Anspråk Detalj"
+msgstr "Utlägg Detalj"
 
 #: frontend/src/components/ExpenseClaimSummary.vue:3
 msgid "Expense Claim Summary"
-msgstr "Kostnad Anspråk Sammanfattning"
+msgstr "Utlägg Sammanfattning"
 
 #. Label of the expense_type (Link) field in DocType 'Expense Claim Detail'
 #. Name of a DocType
@@ -5412,27 +5412,27 @@ msgstr "Kostnad Anspråk Sammanfattning"
 #: hrms/hr/doctype/expense_claim_type/expense_claim_type.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 msgid "Expense Claim Type"
-msgstr "Kostnad Anspråk Typ"
+msgstr "Utlägg Typ"
 
 #: hrms/hr/doctype/vehicle_log/vehicle_log.py:48
 msgid "Expense Claim for Vehicle Log {0}"
-msgstr "Kostnad Anspråk för Fordon Logg {0}"
+msgstr "Utlägg för Fordon Logg {0}"
 
 #: hrms/hr/doctype/vehicle_log/vehicle_log.py:36
 msgid "Expense Claim {0} already exists for the Vehicle Log"
-msgstr "Kostnad Anspråk {0} finns redan för Fordon Logg"
+msgstr "Utlägg {0} finns redan för Fordon Logg"
 
 #. Name of a Workspace
 #. Label of a chart in the Expense Claims Workspace
 #: frontend/src/views/expense_claim/Dashboard.vue:2
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 msgid "Expense Claims"
-msgstr "Kostnad Anspråk"
+msgstr "Utlägg"
 
 #. Label of a shortcut in the HR Workspace
 #: hrms/hr/workspace/hr/hr.json
 msgid "Expense Claims Dashboard"
-msgstr "Kostnad Anspråk Översikt Panel"
+msgstr "Utlägg Översikt Panel"
 
 #. Label of the expense_date (Date) field in DocType 'Expense Claim Detail'
 #: hrms/hr/doctype/expense_claim_detail/expense_claim_detail.json
@@ -9504,7 +9504,7 @@ msgstr "Lönedagar beroende av"
 
 #: hrms/payroll/doctype/salary_slip/salary_slip.js:287
 msgid "Payment Days calculations are based on these Payroll Settings"
-msgstr "Lönedagar beräkning baseras på dessa Lön Inställningar"
+msgstr "Lönedagar beräkning baseras på dessa Löneinställningar"
 
 #. Label of a Link in the Expense Claims Workspace
 #. Label of the account (Section Break) field in DocType 'Payroll Entry'
@@ -10980,7 +10980,7 @@ msgstr "Rad #{0}: Tidrapport belopp kommer att skriva över Inkomst komponent be
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:579
 msgid "Row No {0}: Amount cannot be greater than the Outstanding Amount against Expense Claim {1}. Outstanding Amount is {2}"
-msgstr "Rad Nummer {0}: Belopp kan inte vara högre än Utestående Belopp mot Kostnad Anspråk {1}. Utestående Belopp är {2}"
+msgstr "Rad #{0}: Belopp kan inte vara högre än Utestående Belopp mot Utlägg {1}. Utestående Belopp är {2}"
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:338
 msgid "Row {0}# Allocated amount {1} cannot be greater than unclaimed amount {2}"
@@ -11012,7 +11012,7 @@ msgstr "Rad {0}: {1}"
 
 #: hrms/hr/doctype/expense_claim/expense_claim.py:271
 msgid "Row {0}: {1} is required in the expenses table to book an expense claim."
-msgstr "Rad {0}: {1} erfodras i Kostnad Tabell att bokföra Kostnad Anspråk."
+msgstr "Rad #{0}: {1} erfodras i Kostnad Tabell att bokföra Utlägg."
 
 #. Label of the gratuity_rules_section (Section Break) field in DocType
 #. 'Gratuity Rule'
@@ -13103,11 +13103,11 @@ msgstr "Totalt Kostnad Belopp"
 
 #: hrms/setup.py:292
 msgid "Total Expense Claim (via Expense Claim)"
-msgstr "Total Kostnad Anspråk (via Kostnad Anspråk)"
+msgstr "Totalt Utlägg (via Utlägg)"
 
 #: hrms/setup.py:283
 msgid "Total Expense Claim (via Expense Claims)"
-msgstr "Total Kostnad Anspråk (via Kostnad Anspråk)"
+msgstr "Totalt Utlägg (via Utlägg)"
 
 #. Label of the total_score (Float) field in DocType 'Appraisal'
 #: hrms/hr/doctype/appraisal/appraisal.json
@@ -13601,7 +13601,7 @@ msgstr "Obetald"
 #: hrms/hr/report/unpaid_expense_claim/unpaid_expense_claim.json
 #: hrms/hr/workspace/expense_claims/expense_claims.json
 msgid "Unpaid Expense Claim"
-msgstr "Obetald Kostnad"
+msgstr "Obetald Utlägg"
 
 #. Option for the 'Status' (Select) field in DocType 'Full and Final
 #. Outstanding Statement'
@@ -14432,7 +14432,7 @@ msgstr "{} "
 #. Count format of shortcut in the Recruitment Workspace
 #: hrms/hr/workspace/recruitment/recruitment.json
 msgid "{} Accepted"
-msgstr "{} Godkänd"
+msgstr "{} Accepterad"
 
 #. Count format of shortcut in the HR Workspace
 #: hrms/hr/workspace/hr/hr.json

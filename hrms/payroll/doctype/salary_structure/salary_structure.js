@@ -72,10 +72,6 @@ frappe.ui.form.on("Salary Structure", {
 	},
 
 	company: function (frm) {
-		let company = locals[":Company"][frm.doc.company];
-		if (!frm.doc.letter_head && company.default_letter_head) {
-			frm.set_value("letter_head", company.default_letter_head);
-		}
 		frm.trigger("set_earning_deduction_component");
 	},
 

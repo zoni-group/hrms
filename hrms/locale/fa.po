@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-10 09:33+0000\n"
-"PO-Revision-Date: 2024-11-21 21:08\n"
+"PO-Revision-Date: 2024-11-24 22:07\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
@@ -1810,7 +1810,7 @@ msgstr "پایه و متغیر"
 #. Label of the begin_on (Int) field in DocType 'Employee Boarding Activity'
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 msgid "Begin On (Days)"
-msgstr "شروع در (روزها)"
+msgstr "شروع در (بر حسب روز)"
 
 #. Label of the begin_check_in_before_shift_start_time (Int) field in DocType
 #. 'Shift Type'
@@ -3788,7 +3788,7 @@ msgstr ""
 #. Label of the duration (Int) field in DocType 'Employee Boarding Activity'
 #: hrms/hr/doctype/employee_boarding_activity/employee_boarding_activity.json
 msgid "Duration (Days)"
-msgstr "مدت زمان (روزها)"
+msgstr "مدت زمان (بر حسب روز)"
 
 #: hrms/public/js/utils/index.js:208
 msgid "ERROR({0}): {1}"
@@ -5461,7 +5461,7 @@ msgstr "منقضی تخصیص"
 #. 'Leave Type'
 #: hrms/hr/doctype/leave_type/leave_type.json
 msgid "Expire Carry Forwarded Leaves (Days)"
-msgstr "انقضای مرخصی‌های منتقل شده به دوره بعد (روزها)"
+msgstr "انقضای مرخصی‌های منتقل شده به دوره بعد (بر حسب روز)"
 
 #. Label of the expired (Check) field in DocType 'Leave Allocation'
 #: hrms/hr/doctype/leave_allocation/leave_allocation.json
@@ -8718,7 +8718,7 @@ msgstr "مرخصی های جدید تخصیص داده شد"
 #. Label of the no_of_days (Float) field in DocType 'Leave Control Panel'
 #: hrms/hr/doctype/leave_control_panel/leave_control_panel.json
 msgid "New Leaves Allocated (In Days)"
-msgstr "مرخصی های جدید اختصاص داده شده (در چند روز)"
+msgstr "مرخصی های جدید اختصاص داده شده (بر حسب روز)"
 
 #. Description of the 'Create Shifts After' (Date) field in DocType 'Shift
 #. Assignment Schedule'

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-24 09:35+0000\n"
-"PO-Revision-Date: 2024-11-25 22:09\n"
+"PO-Revision-Date: 2024-11-27 23:07\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -4689,7 +4689,7 @@ msgstr "Skatt Undantag Kategori"
 #: hrms/payroll/doctype/employee_tax_exemption_declaration/employee_tax_exemption_declaration.json
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "Employee Tax Exemption Declaration"
-msgstr "Skattbefrielse Deklaration"
+msgstr "Skatt Undantag Deklaration"
 
 #. Name of a DocType
 #. Label of a Link in the Tax & Benefits Workspace
@@ -4703,7 +4703,7 @@ msgstr "Skatt Undantag Deklaration Kategori"
 #: hrms/payroll/doctype/employee_tax_exemption_proof_submission/employee_tax_exemption_proof_submission.json
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json
 msgid "Employee Tax Exemption Proof Submission"
-msgstr "Skatt Undantag Verifikat Godkännande"
+msgstr "Skatt Undantag Verifikat Inlämning"
 
 #. Name of a DocType
 #: hrms/payroll/doctype/employee_tax_exemption_proof_submission_detail/employee_tax_exemption_proof_submission_detail.json
@@ -5205,7 +5205,7 @@ msgstr "Exkluderade {0} ej Uttagbar Ledighet för {1}"
 #: hrms/payroll/doctype/salary_component/salary_component.json
 #: hrms/payroll/doctype/salary_detail/salary_detail.json
 msgid "Exempted from Income Tax"
-msgstr "Befriad från Inkomstskatt"
+msgstr "Undantagen från Inkomst Skatt"
 
 #. Label of a Card Break in the Tax & Benefits Workspace
 #: hrms/payroll/workspace/tax_&_benefits/tax_&_benefits.json

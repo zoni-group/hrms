@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-11-24 09:35+0000\n"
-"PO-Revision-Date: 2024-11-30 23:35\n"
+"PO-Revision-Date: 2024-12-03 23:48\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -2026,7 +2026,7 @@ msgstr "Beräkna slutresultat baserat på formel"
 #. 'Gratuity Rule'
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule.json
 msgid "Calculate Gratuity Amount Based On"
-msgstr "Beräkna Dricks Belopp Baserat På"
+msgstr "Beräkna Belöning Belopp Baserat På"
 
 #. Label of the payroll_based_on (Select) field in DocType 'Payroll Settings'
 #: hrms/payroll/doctype/payroll_settings/payroll_settings.json
@@ -5831,7 +5831,7 @@ msgstr "Varannan Vecka"
 #. 'Gratuity Rule Slab'
 #: hrms/payroll/doctype/gratuity_rule_slab/gratuity_rule_slab.json
 msgid "Fraction of Applicable Earnings "
-msgstr "Bråkdel av Tillämpliga Intäkter"
+msgstr "Bråkdel av Tillämpliga Inkomster "
 
 #. Label of the daily_wages_fraction_for_half_day (Float) field in DocType
 #. 'Payroll Settings'
@@ -6203,24 +6203,24 @@ msgstr "Totalt Belopp"
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule.json
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule_dashboard.py:7
 msgid "Gratuity"
-msgstr "Dricks"
+msgstr "Belöning"
 
 #. Name of a DocType
 #: hrms/payroll/doctype/gratuity_applicable_component/gratuity_applicable_component.json
 msgid "Gratuity Applicable Component"
-msgstr "Dricks Tillämplig Komponent"
+msgstr "Belöning Tillämplig Komponent"
 
 #. Label of the gratuity_rule (Link) field in DocType 'Gratuity'
 #. Name of a DocType
 #: hrms/payroll/doctype/gratuity/gratuity.json
 #: hrms/payroll/doctype/gratuity_rule/gratuity_rule.json
 msgid "Gratuity Rule"
-msgstr "Dricks Regel"
+msgstr "Belöningsregel"
 
 #. Name of a DocType
 #: hrms/payroll/doctype/gratuity_rule_slab/gratuity_rule_slab.json
 msgid "Gratuity Rule Slab"
-msgstr "Dricks Regel Tabell"
+msgstr "Belöningsregel Tabell"
 
 #. Option for the 'Roster Color' (Select) field in DocType 'Shift Type'
 #: hrms/hr/doctype/shift_type/shift_type.json

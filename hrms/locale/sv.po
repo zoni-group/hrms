@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: contact@frappe.io\n"
 "POT-Creation-Date: 2024-12-01 09:34+0000\n"
-"PO-Revision-Date: 2024-12-04 23:45\n"
+"PO-Revision-Date: 2024-12-05 23:56\n"
 "Last-Translator: contact@frappe.io\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -6916,7 +6916,7 @@ msgstr "Inkomst Skatt Beräkning"
 #. 'Salary Slip'
 #: hrms/payroll/doctype/salary_slip/salary_slip.json
 msgid "Income Tax Deducted Till Date"
-msgstr "Inkomst Skatt Avdraged Hitills"
+msgstr "Inkomstskatt Avdragen till Datum"
 
 #. Name of a report
 #. Label of a Link in the Salary Payout Workspace
@@ -12511,7 +12511,7 @@ msgstr " Skatt & Förmåner"
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.json
 #: hrms/payroll/doctype/salary_structure_assignment/salary_structure_assignment.py:162
 msgid "Tax Deducted Till Date"
-msgstr "Avdragen Skatt Till Datum"
+msgstr "Skatt Avdragen Till Datum"
 
 #. Label of the exemption_category (Link) field in DocType 'Employee Tax
 #. Exemption Sub Category'

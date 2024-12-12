@@ -9,6 +9,11 @@ from hrms.hr.doctype.shift_assignment_tool.shift_assignment_tool import create_s
 
 
 @frappe.whitelist()
+def get_default_company() -> str:
+	return frappe.defaults.get_user_default("Company")
+
+
+@frappe.whitelist()
 def get_values(doctype: str, name: str, fields: list) -> dict[str, str]:
 	return frappe.db.get_value(doctype, name, fields, as_dict=True)
 
@@ -161,14 +166,18 @@ def insert_shift(
 
 def get_holidays(month_start: str, month_end: str, employee_filters: dict[str, str]) -> dict[str, list[dict]]:
 	holidays = {}
+	holiday_lists = {}
 
 	for employee in frappe.get_list("Employee", filters=employee_filters, pluck="name"):
-		if holiday_list := get_holiday_list_for_employee(employee, raise_exception=False):
-			holidays[employee] = frappe.get_all(
+		if not (holiday_list := get_holiday_list_for_employee(employee, raise_exception=False)):
+			continue
+		if holiday_list not in holiday_lists:
+			holiday_lists[holiday_list] = frappe.get_all(
 				"Holiday",
 				filters={"parent": holiday_list, "holiday_date": ["between", [month_start, month_end]]},
 				fields=["name as holiday", "holiday_date", "description", "weekly_off"],
 			)
+		holidays[employee] = holiday_lists[holiday_list].copy()
 
 	return holidays
 

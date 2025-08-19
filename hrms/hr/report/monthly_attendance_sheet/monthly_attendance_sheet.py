@@ -16,7 +16,8 @@ Filters = frappe._dict
 status_map = {
 	"Present": "P",
 	"Absent": "A",
-	"Half Day": "HD",
+	"Half Day/Other Half Absent": "HD/A",
+	"Half Day/Other Half Present": "HD/P",
 	"Work From Home": "WFH",
 	"On Leave": "L",
 	"Holiday": "H",
@@ -60,13 +61,22 @@ def execute(filters: Filters | None = None) -> tuple:
 
 def get_message() -> str:
 	message = ""
-	colors = ["green", "red", "orange", "green", "#318AD8", "", ""]
+	colors = [
+		"green",
+		"red",
+		"orange",
+		"#914EE3",
+		"green",
+		"#3187D8",
+		"#878787",
+		"#878787",
+	]
 
 	count = 0
 	for status, abbr in status_map.items():
 		message += f"""
 			<span style='border-left: 2px solid {colors[count]}; padding-right: 12px; padding-left: 5px; margin-right: 3px;'>
-				{status} - {abbr}
+				{_(status)} - {abbr}
 			</span>
 		"""
 		count += 1
@@ -257,12 +267,24 @@ def get_attendance_map(filters: Filters) -> dict:
 
 def get_attendance_records(filters: Filters) -> list[dict]:
 	Attendance = frappe.qb.DocType("Attendance")
+	status = (
+		frappe.qb.terms.Case()
+		.when(
+			(Attendance.status == "Half Day" and (Attendance.half_day_status == "Present")),
+			"Half Day/Other Half Present",
+		)
+		.when(
+			(Attendance.status == "Half Day" and (Attendance.half_day_status == "Absent")),
+			"Half Day/Other Half Absent",
+		)
+		.else_(Attendance.status)
+	)
 	query = (
 		frappe.qb.from_(Attendance)
 		.select(
 			Attendance.employee,
 			Extract("day", Attendance.attendance_date).as_("day_of_month"),
-			Attendance.status,
+			(status).as_("status"),
 			Attendance.shift,
 		)
 		.where(
@@ -403,7 +425,8 @@ def get_rows(employee_details: dict, filters: Filters, holiday_map: dict, attend
 				employee, filters, employee_attendance, holidays
 			)
 			# set employee details in the first row
-			attendance_for_employee[0].update({"employee": employee, "employee_name": details.employee_name})
+			for record in attendance_for_employee:
+				record.update({"employee": employee, "employee_name": details.employee_name})
 
 			records.extend(attendance_for_employee)
 
@@ -647,9 +670,9 @@ def get_chart_data(attendance_map: dict, filters: Filters) -> dict:
 		"data": {
 			"labels": labels,
 			"datasets": [
-				{"name": "Absent", "values": absent},
-				{"name": "Present", "values": present},
-				{"name": "Leave", "values": leave},
+				{"name": _("Absent"), "values": absent},
+				{"name": _("Present"), "values": present},
+				{"name": _("Leave"), "values": leave},
 			],
 		},
 		"type": "line",

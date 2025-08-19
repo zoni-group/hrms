@@ -340,7 +340,14 @@ class PayrollEntry(Document):
 					ss.salary_structure,
 					ss.employee,
 				)
-				.where((ssd.parentfield == component_type) & (ss.name.isin([d.name for d in salary_slips])))
+				.where(
+					(ssd.parentfield == component_type)
+					& (ss.name.isin([d.name for d in salary_slips]))
+					& (
+						(ssd.do_not_include_in_total == 0)
+						| ((ssd.do_not_include_in_total == 1) & (ssd.do_not_include_in_accounts == 0))
+					)
+				)
 			).run(as_dict=True)
 
 			return salary_components
@@ -961,6 +968,13 @@ class PayrollEntry(Document):
 				& (SalarySlip.start_date >= self.start_date)
 				& (SalarySlip.end_date <= self.end_date)
 				& (SalarySlip.payroll_entry == self.name)
+				& (
+					(SalaryDetail.do_not_include_in_total == 0)
+					| (
+						(SalaryDetail.do_not_include_in_total == 1)
+						& (SalaryDetail.do_not_include_in_accounts == 0)
+					)
+				)
 			)
 		)
 
@@ -1022,6 +1036,9 @@ class PayrollEntry(Document):
 					- (employee_details.get("deductions", 0) or 0)
 					- (employee_details.get("total_loan_repayment", 0) or 0)
 				)
+
+				if not je_payment_amount:
+					continue
 
 				exchange_rate, amount = self.get_amount_and_exchange_rate_for_journal_entry(
 					self.payment_account, je_payment_amount, company_currency, currencies

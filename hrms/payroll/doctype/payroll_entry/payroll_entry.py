@@ -151,7 +151,33 @@ class PayrollEntry(Document):
 
 		# cancel Journal Entries
 		for je in journal_entries:
-			frappe.get_doc("Journal Entry", je).cancel()
+			journal_entry_payment_ledgers = frappe.get_all(
+				"Payment Ledger Entry",
+				{"voucher_type": "Journal Entry", "voucher_no": je, "docstatus": 1},
+				distinct=True,
+			)
+			# cancel linked payment ledger entry
+			for pl in journal_entry_payment_ledgers:
+				payment_ledger_entry = frappe.get_doc("Payment Ledger Entry", pl)
+				payment_ledger_entry.flags.ignore_permissions = True
+				payment_ledger_entry.cancel()
+
+			journal_entry = frappe.get_doc("Journal Entry", je)
+			journal_entry.flags.ignore_permissions = True
+			journal_entry.cancel()
+
+	def cancel_linked_payment_ledger_entries(self):
+		payment_ledgers = frappe.get_all(
+			"Payment Ledger Entry",
+			{"against_voucher_type": self.doctype, "against_voucher_no": self.name, "docstatus": 1},
+			distinct=True,
+		)
+
+		# cancel payment ledger entry
+		for pl in payment_ledgers:
+			payment_ledger_entry = frappe.get_doc("Payment Ledger Entry", pl)
+			payment_ledger_entry.flags.ignore_permissions = True
+			payment_ledger_entry.cancel()
 
 	def get_linked_salary_slips(self):
 		return frappe.get_all("Salary Slip", {"payroll_entry": self.name}, ["name", "docstatus"])
@@ -865,7 +891,7 @@ class PayrollEntry(Document):
 			.on(je.name == jea.parent)
 			.select(je.name)
 			.where(
-				(je.voucher_type == "Bank Entry")
+				((je.voucher_type == "Bank Entry") | (je.voucher_type == "Cash Entry"))
 				& (jea.reference_name == self.name)
 				& (jea.reference_type == "Payroll Entry")
 			)
@@ -1098,7 +1124,9 @@ class PayrollEntry(Document):
 		return self.make_journal_entry(
 			accounts,
 			currencies,
-			voucher_type="Bank Entry",
+			voucher_type="Cash Entry"
+			if frappe.get_cached_value("Account", self.payment_account, "account_type") == "Cash"
+			else "Bank Entry",
 			user_remark=_("Payment of {0} from {1} to {2}").format(
 				_(user_remark), self.start_date, self.end_date
 			),

@@ -993,7 +993,7 @@ class SalarySlip(TransactionBase):
 				- self.income_tax_deducted_till_date
 			)
 
-			self.current_month_income_tax = self.get("current_tax_amount", 0)
+			self.current_month_income_tax = self.get("current_tax_amount_for_payment_days", 0)
 
 			# non included current_month_income_tax separately as its already considered
 			# while calculating income_tax_deducted_till_date
@@ -1139,7 +1139,7 @@ class SalarySlip(TransactionBase):
 		for tax_component in self.get("_component_based_variable_tax") or {}:
 			tax_deducted += (
 				self._component_based_variable_tax[tax_component]["previous_total_paid_taxes"]
-				+ self._component_based_variable_tax[tax_component]["current_tax_amount"]
+				+ self._component_based_variable_tax[tax_component]["current_tax_amount_for_payment_days"]
 			)
 		return tax_deducted
 
@@ -1340,10 +1340,19 @@ class SalarySlip(TransactionBase):
 
 		for additional_salary in additional_salaries:
 			component_data = get_salary_component_data(additional_salary.component)
-			remove_if_zero_valued = frappe.get_cached_value(
-				"Salary Component", additional_salary.component, "remove_if_zero_valued"
+			# keep a zero tax overwrite so tax is not recalculated from the slabs
+			remove_if_zero_valued = (
+				frappe.get_cached_value(
+					"Salary Component", additional_salary.component, "remove_if_zero_valued"
+				)
+				and not component_data.variable_based_on_taxable_salary
 			)
-			if flt(additional_salary.amount) == 0 and remove_if_zero_valued:
+			# apply a zero overwrite so the structure amount is removed
+			if (
+				flt(additional_salary.amount) == 0
+				and remove_if_zero_valued
+				and not additional_salary.overwrite
+			):
 				continue
 			self.update_component_row(
 				component_data,
@@ -1351,6 +1360,7 @@ class SalarySlip(TransactionBase):
 				component_type,
 				additional_salary,
 				is_recurring=additional_salary.is_recurring,
+				remove_if_zero_valued=remove_if_zero_valued,
 			)
 
 	def add_tax_components(self):
@@ -1586,12 +1596,28 @@ class SalarySlip(TransactionBase):
 			eval_locals,
 		)
 
+		# the tax row is prorated by payment days, so the current period counts only as that share
+		payment_days_share = 1
+		if not has_additional_salary_tax_component:
+			tax_row = next(
+				(
+					d
+					for d in self.get("deductions")
+					if d.salary_component == tax_component and not d.additional_salary
+				),
+				None,
+			) or get_salary_component_data(tax_component)
+			if cint(tax_row.depends_on_payment_days) and cint(self.total_working_days):
+				payment_days_share = flt(self.payment_days) / cint(self.total_working_days)
+
+		remaining_sub_periods = self.remaining_sub_periods - 1 + payment_days_share
+
 		if has_additional_salary_tax_component:
 			self.current_structured_tax_amount = self.additional_salary_amount
-		elif self.remaining_sub_periods > 0:
+		elif remaining_sub_periods > 0:
 			self.current_structured_tax_amount = (
 				self.total_structured_tax_amount - self.previous_total_paid_taxes
-			) / self.remaining_sub_periods
+			) / remaining_sub_periods
 		else:
 			self.current_structured_tax_amount = 0.0
 
@@ -1611,6 +1637,7 @@ class SalarySlip(TransactionBase):
 				else (self.current_structured_tax_amount + self.full_tax_on_additional_earnings)
 			),
 		)
+		self.current_tax_amount_for_payment_days = flt(self.current_tax_amount * payment_days_share)
 
 		self._component_based_variable_tax[tax_component].update(
 			{
@@ -1619,6 +1646,7 @@ class SalarySlip(TransactionBase):
 				"current_structured_tax_amount": self.current_structured_tax_amount,
 				"full_tax_on_additional_earnings": self.full_tax_on_additional_earnings,
 				"current_tax_amount": self.current_tax_amount,
+				"current_tax_amount_for_payment_days": self.current_tax_amount_for_payment_days,
 			}
 		)
 
@@ -1862,7 +1890,11 @@ class SalarySlip(TransactionBase):
 			and cint(row.depends_on_payment_days)
 		):
 			amount, additional_amount = 0, 0
-		elif not row.amount and row.additional_amount:
+		elif (
+			not row.amount
+			and row.additional_amount
+			and not (row.additional_salary and row.default_amount)  # overwritten amount is final
+		):
 			amount = flt(row.additional_amount)
 
 		# apply rounding
